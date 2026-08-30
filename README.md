@@ -1,119 +1,96 @@
-```markdown
-# Car Market Trends Analysis with CarDekho Data
+# 🚗 Car Market Trends Analysis with CarDekho Data
 
-A data analysis project exploring used-vehicle price trends using a CarDekho dataset containing 301 vehicle listings — 200 cars and 101 two-wheelers.
+> A Python-based data analysis project exploring used-car and two-wheeler price trends using a CarDekho dataset.
 
-This project was created as a DIY data analysis case study to understand the factors that influence used-vehicle prices and resale value.
+## 📌 About the Project
+
+This project analyzes **301 used-vehicle listings**, including **200 cars and 101 two-wheelers**, to understand the factors that influence resale prices.
+
+I created this project as a **DIY data analysis case study** using Python, Pandas, NumPy, Matplotlib, and Seaborn.
+
+The analysis focuses on vehicle age, mileage, ownership history, fuel type, transmission, seller type, and differences between cars and two-wheelers.
 
 **Author:** Muhammad Shafeeq
 
 ---
 
-## 📊 Project Overview
+## 🎯 Questions Explored
 
-The project analyzes the used-vehicle market and answers **25 questions** covering:
+The project answers **25 questions** about the used-vehicle market, including:
 
-- Vehicle price ranges
-- Depreciation patterns
-- Impact of vehicle age on resale price
-- Impact of mileage on resale price
-- Effect of previous ownership
-- Fuel type distribution
-- Transmission type distribution
-- Seller type analysis
-- Cars vs. two-wheelers
-- Vehicles priced higher than expected
+- How vehicle prices vary across the dataset
+- How vehicle age affects resale value
+- Whether mileage has a major impact on price
+- How previous ownership affects resale value
+- Which fuel types are most common
+- Manual vs. automatic transmission trends
+- Individual vs. dealer sellers
+- Differences between cars and two-wheelers
+- Which vehicles appear to have unusually high resale prices
 
----
-
-## 🔍 Key Findings
-
-- The dataset contains **301 vehicle listings**:
-  - 🚗 200 cars
-  - 🏍️ 101 two-wheelers
-- Vehicles range from **2003 to 2018**.
-- There are **no missing values** across the 301 records.
-- **Vehicle age has the strongest relationship with depreciation**:
-  - Age: **r ≈ 0.85**
-  - Mileage: **r ≈ 0.51**
-  - Ownership count: **r ≈ 0.22**
-- **Honda City** is the most frequently listed car, with **26 listings**.
-- **Royal Enfield Classic 350** is the most frequently listed bike, with **7 listings**.
-- Only **40 vehicles are automatic**.
-- Only **2 vehicles run on CNG**.
-- The dataset is dominated by **manual petrol and diesel vehicles**.
-- Approximately **96% of listings are single-owner, first-hand vehicles**.
+📄 **Detailed answers:**  
+[`CarDekho_Case_Study_Answers.md`](CarDekho_Case_Study_Answers.md)
 
 ---
 
-## 📁 Repository Contents
+## 🔎 Key Insights
 
-| File | Description |
-|---|---|
-| `Copy_of_Car_Market_Trends_Analysis_with_Car_Dekho_Data.ipynb` | Complete Jupyter/Google Colab notebook with analysis, code, and outputs |
-| `CarDekho_Case_Study_Answers.md` | Detailed answers to all 25 analysis questions |
-| `1776311302-P3-Car Market Trends Analysis with Car Dekho Data.csv` | Source dataset used for the analysis |
-| `Car_Market_Trends_Analysis_DIY_Project.pptx` | Project presentation |
+### 📊 Dataset
 
----
+- **301 total vehicle listings**
+- **200 cars**
+- **101 two-wheelers**
+- Vehicle years range from **2003 to 2018**
+- No missing values were found in the dataset
 
-## 🛠️ Tools & Technologies
+### 📉 Depreciation
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Google Colab
+Vehicle age showed the strongest relationship with depreciation:
 
----
+| Factor | Correlation |
+|---|---:|
+| Vehicle Age | **0.85** |
+| Mileage | **0.51** |
+| Ownership | **0.22** |
 
-## 📈 Analysis Process
+This suggests that **vehicle age was a much stronger factor in resale value than mileage or ownership count** within this dataset.
 
-The project follows a simple data analysis workflow:
+### 🚘 Popular Vehicles
 
-1. Load the CarDekho dataset
-2. Inspect and understand the data
-3. Clean and prepare the dataset
-4. Perform exploratory data analysis
-5. Analyze vehicle prices and depreciation
-6. Study relationships between price, age, mileage, and ownership
-7. Compare cars and two-wheelers
-8. Analyze fuel, transmission, and seller types
-9. Identify unusual or higher-than-expected listings
-10. Summarize the key insights
+- **Most listed car:** Honda City — 26 listings
+- **Most listed bike:** Royal Enfield Classic 350 — 7 listings
+
+### ⚙️ Vehicle Characteristics
+
+- **40** vehicles have automatic transmission
+- Only **2** vehicles use CNG
+- The dataset is mainly made up of **manual petrol and diesel vehicles**
+- Around **96%** of listings are single-owner, first-hand vehicles
 
 ---
 
-## 🎯 Project Objective
+## 🧠 What I Learned
 
-The main objective of this project is to use Python-based data analysis to understand:
+Through this project, I practiced:
 
-> **What factors have the biggest influence on used-vehicle prices and resale value?**
-
-The analysis shows that **vehicle age has a much stronger relationship with depreciation than mileage or the number of previous owners** in this dataset.
-
----
-
-## 📌 Case Study
-
-The complete analysis contains answers to **25 questions** related to the used-vehicle market.
-
-For the detailed findings and explanations, see:
-
-`CarDekho_Case_Study_Answers.md`
+- Data cleaning and preparation
+- Exploratory Data Analysis (EDA)
+- Working with Pandas DataFrames
+- Statistical correlation analysis
+- Data visualization
+- Comparing different vehicle categories
+- Extracting insights from real-world datasets
+- Presenting analytical findings clearly
 
 ---
 
-## 👨‍💻 Author
+## 🛠️ Technologies Used
 
-**Muhammad Shafeeq**
+```text
+Python
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Google Colab
 
-
-
----
-
-## ⭐ Project
-
-If you find this project useful, feel free to ⭐ star the repository.
-```
